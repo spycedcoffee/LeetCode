@@ -13,10 +13,8 @@ public:
             return false;
         }
 
-        ListNode *slow = new ListNode(NULL);
-        ListNode *fast = new ListNode(NULL);
-        slow = head;
-        fast = head->next;
+        ListNode *slow = head;
+        ListNode *fast = head->next;
         while(true) {
             if(fast == NULL || fast->next == NULL) {
                 return false;
